@@ -4,7 +4,7 @@ import pandas
 import numpy as np
 from scipy import integrate
 from bokeh.io import curdoc
-from bokeh.charts import Bar, output_file, show
+from bokeh.charts import Bar
 from bokeh.charts.attributes import cat
 from bokeh.charts.operations import blend
 from bokeh.layouts import widgetbox, column, row
@@ -73,7 +73,6 @@ def get_levels(data_static, data_inp,
         result += (temp[:],)
     return result
 
-output_file("GrCM.html")
 
 TDIR = os.path.dirname(os.path.abspath(__file__))
 data_static = pandas.read_csv(
