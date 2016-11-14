@@ -8,7 +8,7 @@ from bokeh.io import curdoc
 from bokeh.charts import output_file
 from bokeh.layouts import row
 from bokeh.models import (
-    CustomJS, ColumnDataSource, HoverTool, TapTool
+    Arrow, NormalHead, CustomJS, ColumnDataSource, HoverTool, TapTool
 )
 from bokeh.plotting import figure
 
@@ -22,14 +22,12 @@ def get_graph(sif_file):
 
     G = nx.DiGraph()
     G.add_nodes_from(nodes)
-    c = ['black', 'blue', 'red', 'yellow', 'green']
     for i, itype in enumerate(interaction_types):
         ind = np.where(data[:, 1] == itype.encode())[0]
         # color = np.random.random((3,))
-        color = c[i]
         start = [_.decode() for _ in data[ind, 0]]
         end = [_.decode() for _ in data[ind, 2]]
-        G.add_edges_from(zip(start, end), color=color)
+        G.add_edges_from(zip(start, end), name=itype)
 
     # values = [0.25 for node in G.nodes()]
     return nx.spring_layout(G), G
@@ -137,12 +135,6 @@ nodes, nodes_coordinates = zip(*sorted(layout.items()))
 nodes_xs, nodes_ys = list(zip(*nodes_coordinates))
 nodes_source = ColumnDataSource(dict(x=nodes_xs, y=nodes_ys,
                                      name=nodes))
-d = dict(xs=[], ys=[], color=[])
-for (u, v), color in nx.get_edge_attributes(graph, 'color').items():
-    d['xs'].append([layout[u][0], layout[v][0]])
-    d['ys'].append([layout[u][1], layout[v][1]])
-    d['color'].append(color)
-lines_source = ColumnDataSource(d)
 
 hover = HoverTool(tooltips=[('name', '@name'), ('id', '$index')])
 net = figure(sizing_mode=sizing_mode,
@@ -163,9 +155,20 @@ callback = CustomJS(args=callback_args, code="""
 """)
 taptool.callback = callback
 
-r_lines = net.multi_line('xs', 'ys', line_width=2.5,
-                         line_color='color',
-                         source=lines_source)
+# add arrows to show interactions
+interaction_types = list(set(nx.get_edge_attributes(graph, 'name').values()))
+colors = dict(zip(
+    interaction_types, ['black', 'blue', 'red', 'yellow', 'green']))
+for (u, v), itype in nx.get_edge_attributes(graph, 'name').items():
+    color = colors[itype]
+    head = NormalHead(line_color=color, line_width=1.5, fill_color=color,
+                      size=7)
+    xs, ys = layout[u]
+    xe, ye = layout[v]
+    net.add_layout(
+        Arrow(end=head, x_start=xs, y_start=ys, x_end=xe, y_end=ye,
+              line_color=color)
+    )
 
 p = row(net, s1)
 
