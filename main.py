@@ -1,8 +1,8 @@
 #!/usr/bin/python
+import json
 import os
 import pandas
 import numpy as np
-import networkx as nx
 from scipy import integrate
 from bokeh.io import curdoc
 from bokeh.charts import output_file
@@ -13,24 +13,32 @@ from bokeh.models import (
 from bokeh.plotting import figure
 
 
-def get_graph(sif_file):
-    data = np.loadtxt(sif_file, dtype='S')
+def get_graph(cyjs_file):
+    with open(cyjs_file, 'r') as fh:
+        data = json.loads(fh.read())
 
-    interaction_types = [_.decode() for _ in np.unique(data[:, 1])]
-    nodes = [_.decode() for _ in np.unique(
-        np.concatenate((data[:, 0], data[:, 2])))]
+    nodes = {}
+    for node in data['elements']['nodes']:
+        nodes[node['data']['id']] = dict(
+            x=node['position']['x'], y=node['position']['y'],
+            name=node['data']['name'])
 
-    G = nx.DiGraph()
-    G.add_nodes_from(nodes)
-    for i, itype in enumerate(interaction_types):
-        ind = np.where(data[:, 1] == itype.encode())[0]
-        # color = np.random.random((3,))
-        start = [_.decode() for _ in data[ind, 0]]
-        end = [_.decode() for _ in data[ind, 2]]
-        G.add_edges_from(zip(start, end), name=itype)
-
-    # values = [0.25 for node in G.nodes()]
-    return nx.spring_layout(G), G
+    edges = []
+    for edge in data['elements']['edges']:
+        esource = nodes[edge['data']['source']]
+        etarget = nodes[edge['data']['target']]
+        inter = edge['data']['interaction']
+        arrow = 'Reg' in inter or 'reg' in inter
+        if inter.startswith('Neg'):
+            color = 'blue'
+        elif inter.startswith('Pos'):
+            color = 'red'
+        else:
+            color = 'black'
+        edges.append(dict(
+            xs=esource['x'], ys=esource['y'], xe=etarget['x'], ye=etarget['y'],
+            arrow=arrow, color=color))
+    return nodes, edges
 
 
 def Protein_translation_RNA(t, y, L, U, D, mRNA):
@@ -130,17 +138,35 @@ s1 = figure(tools='tap', title=None, sizing_mode=sizing_mode,
 s1.line('x', 'y1', source=source, color='blue', legend="Ambient CO2")
 s1.line('x', 'y2', source=source, color='red', legend="Elevated CO2")
 
-layout, graph = get_graph(os.path.join(TDIR, 'Input', 'example.sif'))
-nodes, nodes_coordinates = zip(*sorted(layout.items()))
-nodes_xs, nodes_ys = list(zip(*nodes_coordinates))
-nodes_source = ColumnDataSource(dict(x=nodes_xs, y=nodes_ys,
-                                     name=nodes))
+nodes, edges = get_graph('Input/example.cyjs')
+
+colors = []
+labels = []
+for node in nodes.values():
+    try:
+        gene_amb = amb_source.data[node['name']][-1]
+        gene_ele = ele_source.data[node['name']][-1]
+        if gene_ele > gene_amb:
+            colors.append('red')
+            labels.append('mRNA higher for elevated CO2')
+        else:
+            colors.append('blue')
+            labels.append('mRNA higher for ambient CO2')
+    except KeyError:
+        colors.append('black')
+        labels.append('mRNA unknown')
+
+nodes_source = ColumnDataSource(
+    dict(x=[_['x'] for _ in nodes.values()],
+         y=[_['y'] for _ in nodes.values()],
+         name=[_['name'] for _ in nodes.values()],
+         color=colors, label=labels))
 
 hover = HoverTool(tooltips=[('name', '@name'), ('id', '$index')])
 net = figure(sizing_mode=sizing_mode,
              tools=['tap', hover, 'box_zoom', 'reset'])
 r_circles = net.circle('x', 'y', source=nodes_source, size=10,
-                       color='blue', level='overlay')
+                       color='color', level='overlay', legend='label')
 
 taptool = net.select(type=TapTool)
 callback_args = dict(source=source, amb=amb_source, ele=ele_source)
@@ -156,19 +182,29 @@ callback = CustomJS(args=callback_args, code="""
 taptool.callback = callback
 
 # add arrows to show interactions
-interaction_types = list(set(nx.get_edge_attributes(graph, 'name').values()))
-colors = dict(zip(
-    interaction_types, ['black', 'blue', 'red', 'yellow', 'green']))
-for (u, v), itype in nx.get_edge_attributes(graph, 'name').items():
-    color = colors[itype]
-    head = NormalHead(line_color=color, line_width=1.5, fill_color=color,
-                      size=7)
-    xs, ys = layout[u]
-    xe, ye = layout[v]
+for edge in edges:
+    color = edge['color']
+    if edge['arrow']:
+        head = NormalHead(line_color=color, line_width=1.5, fill_color=color,
+                          size=8)
+        line_dash = [0, 0]
+    else:
+        head = None
+        line_dash = [4, 4]
+    xs, ys = edge['xs'], edge['ys']
+    xe, ye = edge['xe'], edge['ye']
     net.add_layout(
         Arrow(end=head, x_start=xs, y_start=ys, x_end=xe, y_end=ye,
-              line_color=color)
+              line_color=color, line_dash=line_dash)
     )
+
+net.line([0, 0.1], [0, 0.1], color='red', legend='Positive correlation')
+net.line([0, 0.1], [0, 0.1], color='blue', legend='Negative correlation')
+net.line([0, 0.1], [0, 0.1], color='black', legend='Just regulation')
+net.line([0, 0.1], [0, 0.1], color='gray',
+         line_dash=[4, 4], legend='Correlation')
+net.line([0, 0.1], [0, 0.1], color='gray',
+         legend='Correlation with Regulation')
 
 p = row(net, s1)
 

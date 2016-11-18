@@ -1,0 +1,1329 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.4.0",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "shared_name" : "example.sif",
+    "name" : "example.sif",
+    "SUID" : 64,
+    "__Annotations" : [ ],
+    "selected" : true
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "172",
+        "shared_name" : "Glyma.03G130000",
+        "name" : "Glyma.03G130000",
+        "SUID" : 172,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 787.0,
+        "y" : 476.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "169",
+        "shared_name" : "Glyma.04G046200",
+        "name" : "Glyma.04G046200",
+        "SUID" : 169,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 104.0,
+        "y" : 828.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "164",
+        "shared_name" : "Glyma.13G062700",
+        "name" : "Glyma.13G062700",
+        "SUID" : 164,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 479.6247794967151,
+        "y" : 223.0016270823825
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "162",
+        "shared_name" : "Glyma.06G094300",
+        "name" : "Glyma.06G094300",
+        "SUID" : 162,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 371.91831241114755,
+        "y" : 347.4683340191702
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "160",
+        "shared_name" : "Glyma.14G200200",
+        "name" : "Glyma.14G200200",
+        "SUID" : 160,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 436.0,
+        "y" : 697.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "154",
+        "shared_name" : "Glyma.07G048500",
+        "name" : "Glyma.07G048500",
+        "SUID" : 154,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 425.5,
+        "y" : 285.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "145",
+        "shared_name" : "Glyma.12G040600",
+        "name" : "Glyma.12G040600",
+        "SUID" : 145,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 862.8591003541346,
+        "y" : 0.700783436683551
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "139",
+        "shared_name" : "Glyma.13G274100",
+        "name" : "Glyma.13G274100",
+        "SUID" : 139,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 283.1206088854381,
+        "y" : 1.7385124371937186
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "137",
+        "shared_name" : "Glyma.13G280000",
+        "name" : "Glyma.13G280000",
+        "SUID" : 137,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 394.0,
+        "y" : 204.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "135",
+        "shared_name" : "Glyma.06G248900",
+        "name" : "Glyma.06G248900",
+        "SUID" : 135,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 454.0,
+        "y" : 113.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "130",
+        "shared_name" : "Glyma.13G076800",
+        "name" : "Glyma.13G076800",
+        "SUID" : 130,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 309.0,
+        "y" : 140.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "120",
+        "shared_name" : "Glyma.01G026700",
+        "name" : "Glyma.01G026700",
+        "SUID" : 120,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 862.8591003541346,
+        "y" : 165.29921656331646
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "119",
+        "shared_name" : "Glyma.12G077800",
+        "name" : "Glyma.12G077800",
+        "SUID" : 119,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 862.5,
+        "y" : 83.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "117",
+        "shared_name" : "Glyma.17G005600",
+        "name" : "Glyma.17G005600",
+        "SUID" : 117,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 57.0,
+        "y" : 0.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "115",
+        "shared_name" : "Glyma.08G132800",
+        "name" : "Glyma.08G132800",
+        "SUID" : 115,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 132.0,
+        "y" : 61.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "113",
+        "shared_name" : "Glyma.06G017100",
+        "name" : "Glyma.06G017100",
+        "SUID" : 113,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 179.0,
+        "y" : 6.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "111",
+        "shared_name" : "Glyma.06G105000",
+        "name" : "Glyma.06G105000",
+        "SUID" : 111,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 24.496742366702847,
+        "y" : 195.3284925538769
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "107",
+        "shared_name" : "Glyma.04G008300",
+        "name" : "Glyma.04G008300",
+        "SUID" : 107,
+        "selected" : true
+      },
+      "position" : {
+        "x" : 190.037353515625,
+        "y" : 100.74709912173407
+      },
+      "selected" : true
+    }, {
+      "data" : {
+        "id" : "106",
+        "shared_name" : "Glyma.11G064300",
+        "name" : "Glyma.11G064300",
+        "SUID" : 106,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 84.5,
+        "y" : 139.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "101",
+        "shared_name" : "Glyma.13G222300",
+        "name" : "Glyma.13G222300",
+        "SUID" : 101,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 645.0,
+        "y" : 439.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "99",
+        "shared_name" : "Glyma.10G059500",
+        "name" : "Glyma.10G059500",
+        "SUID" : 99,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 589.0,
+        "y" : 287.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "96",
+        "shared_name" : "Glyma.15G250800",
+        "name" : "Glyma.15G250800",
+        "SUID" : 96,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 319.0,
+        "y" : 401.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "95",
+        "shared_name" : "Glyma.08G302600",
+        "name" : "Glyma.08G302600",
+        "SUID" : 95,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 217.0,
+        "y" : 329.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "93",
+        "shared_name" : "Glyma.19G046600",
+        "name" : "Glyma.19G046600",
+        "SUID" : 93,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 467.0,
+        "y" : 474.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "91",
+        "shared_name" : "Glyma.08G165500",
+        "name" : "Glyma.08G165500",
+        "SUID" : 91,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 343.0,
+        "y" : 600.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "89",
+        "shared_name" : "Glyma.08G214300",
+        "name" : "Glyma.08G214300",
+        "SUID" : 89,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 104.74244982563738,
+        "y" : 977.5420422287242
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "87",
+        "shared_name" : "Glyma.10G086600",
+        "name" : "Glyma.10G086600",
+        "SUID" : 87,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 251.0,
+        "y" : 791.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "85",
+        "shared_name" : "Glyma.10G066700",
+        "name" : "Glyma.10G066700",
+        "SUID" : 85,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 278.0,
+        "y" : 929.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "83",
+        "shared_name" : "Glyma.04G011900",
+        "name" : "Glyma.04G011900",
+        "SUID" : 83,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 208.0,
+        "y" : 913.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "82",
+        "shared_name" : "Glyma.06G323700",
+        "name" : "Glyma.06G323700",
+        "SUID" : 82,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 341.0,
+        "y" : 914.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "80",
+        "shared_name" : "Glyma.08G044100",
+        "name" : "Glyma.08G044100",
+        "SUID" : 80,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 74.5,
+        "y" : 901.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "79",
+        "shared_name" : "Glyma.04G218700",
+        "name" : "Glyma.04G218700",
+        "SUID" : 79,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 0.0,
+        "y" : 909.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "77",
+        "shared_name" : "Glyma.19G106800",
+        "name" : "Glyma.19G106800",
+        "SUID" : 77,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 299.0,
+        "y" : 86.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "75",
+        "shared_name" : "Glyma.17G228800",
+        "name" : "Glyma.17G228800",
+        "SUID" : 75,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 240.0,
+        "y" : 191.0
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "74",
+        "shared_name" : "Glyma.01G010200",
+        "name" : "Glyma.01G010200",
+        "SUID" : 74,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 438.0,
+        "y" : 174.0
+      },
+      "selected" : false
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "173",
+        "source" : "172",
+        "target" : "101",
+        "shared_name" : "Glyma.03G130000 (Pos_correlation) Glyma.13G222300",
+        "name" : "Glyma.03G130000 (Pos_correlation) Glyma.13G222300",
+        "interaction" : "Pos_correlation",
+        "SUID" : 173,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "171",
+        "source" : "169",
+        "target" : "87",
+        "shared_name" : "Glyma.04G046200 (Pos_correlation) Glyma.10G086600",
+        "name" : "Glyma.04G046200 (Pos_correlation) Glyma.10G086600",
+        "interaction" : "Pos_correlation",
+        "SUID" : 171,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "170",
+        "source" : "169",
+        "target" : "83",
+        "shared_name" : "Glyma.04G046200 (Pos_correlation) Glyma.04G011900",
+        "name" : "Glyma.04G046200 (Pos_correlation) Glyma.04G011900",
+        "interaction" : "Pos_correlation",
+        "SUID" : 170,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "161",
+        "source" : "160",
+        "target" : "91",
+        "shared_name" : "Glyma.14G200200 (TF_regulation) Glyma.08G165500",
+        "name" : "Glyma.14G200200 (TF_regulation) Glyma.08G165500",
+        "interaction" : "TF_regulation",
+        "SUID" : 161,
+        "shared_interaction" : "TF_regulation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "168",
+        "source" : "154",
+        "target" : "77",
+        "shared_name" : "Glyma.07G048500 (TF_regulation) Glyma.19G106800",
+        "name" : "Glyma.07G048500 (TF_regulation) Glyma.19G106800",
+        "interaction" : "TF_regulation",
+        "SUID" : 168,
+        "shared_interaction" : "TF_regulation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "167",
+        "source" : "154",
+        "target" : "93",
+        "shared_name" : "Glyma.07G048500 (TF_regulation) Glyma.19G046600",
+        "name" : "Glyma.07G048500 (TF_regulation) Glyma.19G046600",
+        "interaction" : "TF_regulation",
+        "SUID" : 167,
+        "shared_interaction" : "TF_regulation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "166",
+        "source" : "154",
+        "target" : "96",
+        "shared_name" : "Glyma.07G048500 (TF_regulation) Glyma.15G250800",
+        "name" : "Glyma.07G048500 (TF_regulation) Glyma.15G250800",
+        "interaction" : "TF_regulation",
+        "SUID" : 166,
+        "shared_interaction" : "TF_regulation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "165",
+        "source" : "154",
+        "target" : "164",
+        "shared_name" : "Glyma.07G048500 (TF_regulation) Glyma.13G062700",
+        "name" : "Glyma.07G048500 (TF_regulation) Glyma.13G062700",
+        "interaction" : "TF_regulation",
+        "SUID" : 165,
+        "shared_interaction" : "TF_regulation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "163",
+        "source" : "154",
+        "target" : "162",
+        "shared_name" : "Glyma.07G048500 (TF_regulation) Glyma.06G094300",
+        "name" : "Glyma.07G048500 (TF_regulation) Glyma.06G094300",
+        "interaction" : "TF_regulation",
+        "SUID" : 163,
+        "shared_interaction" : "TF_regulation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "144",
+        "source" : "139",
+        "target" : "115",
+        "shared_name" : "Glyma.13G274100 (Pos_correlation) Glyma.08G132800",
+        "name" : "Glyma.13G274100 (Pos_correlation) Glyma.08G132800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 144,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "143",
+        "source" : "139",
+        "target" : "113",
+        "shared_name" : "Glyma.13G274100 (Pos_correlation) Glyma.06G017100",
+        "name" : "Glyma.13G274100 (Pos_correlation) Glyma.06G017100",
+        "interaction" : "Pos_correlation",
+        "SUID" : 143,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "142",
+        "source" : "139",
+        "target" : "77",
+        "shared_name" : "Glyma.13G274100 (Pos_correlation) Glyma.19G106800",
+        "name" : "Glyma.13G274100 (Pos_correlation) Glyma.19G106800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 142,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "141",
+        "source" : "139",
+        "target" : "75",
+        "shared_name" : "Glyma.13G274100 (Pos_correlation) Glyma.17G228800",
+        "name" : "Glyma.13G274100 (Pos_correlation) Glyma.17G228800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 141,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "140",
+        "source" : "139",
+        "target" : "107",
+        "shared_name" : "Glyma.13G274100 (Pos_correlation) Glyma.04G008300",
+        "name" : "Glyma.13G274100 (Pos_correlation) Glyma.04G008300",
+        "interaction" : "Pos_correlation",
+        "SUID" : 140,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "156",
+        "source" : "137",
+        "target" : "154",
+        "shared_name" : "Glyma.13G280000 (Pos_correlation) Glyma.07G048500",
+        "name" : "Glyma.13G280000 (Pos_correlation) Glyma.07G048500",
+        "interaction" : "Pos_correlation",
+        "SUID" : 156,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "155",
+        "source" : "135",
+        "target" : "154",
+        "shared_name" : "Glyma.06G248900 (Neg_correlationWithTFRegulation) Glyma.07G048500",
+        "name" : "Glyma.06G248900 (Neg_correlationWithTFRegulation) Glyma.07G048500",
+        "interaction" : "Neg_correlationWithTFRegulation",
+        "SUID" : 155,
+        "shared_interaction" : "Neg_correlationWithTFRegulation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "138",
+        "source" : "130",
+        "target" : "137",
+        "shared_name" : "Glyma.13G076800 (TF_regulation) Glyma.13G280000",
+        "name" : "Glyma.13G076800 (TF_regulation) Glyma.13G280000",
+        "interaction" : "TF_regulation",
+        "SUID" : 138,
+        "shared_interaction" : "TF_regulation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "136",
+        "source" : "130",
+        "target" : "135",
+        "shared_name" : "Glyma.13G076800 (TF_regulation) Glyma.06G248900",
+        "name" : "Glyma.13G076800 (TF_regulation) Glyma.06G248900",
+        "interaction" : "TF_regulation",
+        "SUID" : 136,
+        "shared_interaction" : "TF_regulation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "134",
+        "source" : "130",
+        "target" : "106",
+        "shared_name" : "Glyma.13G076800 (Pos_correlationWithTFRegulation) Glyma.11G064300",
+        "name" : "Glyma.13G076800 (Pos_correlationWithTFRegulation) Glyma.11G064300",
+        "interaction" : "Pos_correlationWithTFRegulation",
+        "SUID" : 134,
+        "shared_interaction" : "Pos_correlationWithTFRegulation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "133",
+        "source" : "130",
+        "target" : "77",
+        "shared_name" : "Glyma.13G076800 (Pos_correlation) Glyma.19G106800",
+        "name" : "Glyma.13G076800 (Pos_correlation) Glyma.19G106800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 133,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "132",
+        "source" : "130",
+        "target" : "75",
+        "shared_name" : "Glyma.13G076800 (Pos_correlation) Glyma.17G228800",
+        "name" : "Glyma.13G076800 (Pos_correlation) Glyma.17G228800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 132,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "131",
+        "source" : "130",
+        "target" : "107",
+        "shared_name" : "Glyma.13G076800 (Pos_correlation) Glyma.04G008300",
+        "name" : "Glyma.13G076800 (Pos_correlation) Glyma.04G008300",
+        "interaction" : "Pos_correlation",
+        "SUID" : 131,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "146",
+        "source" : "119",
+        "target" : "145",
+        "shared_name" : "Glyma.12G077800 (Pos_correlation) Glyma.12G040600",
+        "name" : "Glyma.12G077800 (Pos_correlation) Glyma.12G040600",
+        "interaction" : "Pos_correlation",
+        "SUID" : 146,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "121",
+        "source" : "119",
+        "target" : "120",
+        "shared_name" : "Glyma.12G077800 (Pos_correlation) Glyma.01G026700",
+        "name" : "Glyma.12G077800 (Pos_correlation) Glyma.01G026700",
+        "interaction" : "Pos_correlation",
+        "SUID" : 121,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "159",
+        "source" : "117",
+        "target" : "115",
+        "shared_name" : "Glyma.17G005600 (Pos_correlation) Glyma.08G132800",
+        "name" : "Glyma.17G005600 (Pos_correlation) Glyma.08G132800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 159,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "158",
+        "source" : "117",
+        "target" : "113",
+        "shared_name" : "Glyma.17G005600 (Pos_correlation) Glyma.06G017100",
+        "name" : "Glyma.17G005600 (Pos_correlation) Glyma.06G017100",
+        "interaction" : "Pos_correlation",
+        "SUID" : 158,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "157",
+        "source" : "117",
+        "target" : "107",
+        "shared_name" : "Glyma.17G005600 (Pos_correlation) Glyma.04G008300",
+        "name" : "Glyma.17G005600 (Pos_correlation) Glyma.04G008300",
+        "interaction" : "Pos_correlation",
+        "SUID" : 157,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "153",
+        "source" : "115",
+        "target" : "77",
+        "shared_name" : "Glyma.08G132800 (Pos_correlation) Glyma.19G106800",
+        "name" : "Glyma.08G132800 (Pos_correlation) Glyma.19G106800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 153,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "152",
+        "source" : "115",
+        "target" : "75",
+        "shared_name" : "Glyma.08G132800 (Pos_correlationWithTFRegulation) Glyma.17G228800",
+        "name" : "Glyma.08G132800 (Pos_correlationWithTFRegulation) Glyma.17G228800",
+        "interaction" : "Pos_correlationWithTFRegulation",
+        "SUID" : 152,
+        "shared_interaction" : "Pos_correlationWithTFRegulation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "151",
+        "source" : "115",
+        "target" : "107",
+        "shared_name" : "Glyma.08G132800 (Pos_correlationWithTFRegulation) Glyma.04G008300",
+        "name" : "Glyma.08G132800 (Pos_correlationWithTFRegulation) Glyma.04G008300",
+        "interaction" : "Pos_correlationWithTFRegulation",
+        "SUID" : 151,
+        "shared_interaction" : "Pos_correlationWithTFRegulation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "150",
+        "source" : "113",
+        "target" : "115",
+        "shared_name" : "Glyma.06G017100 (Pos_correlation) Glyma.08G132800",
+        "name" : "Glyma.06G017100 (Pos_correlation) Glyma.08G132800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 150,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "149",
+        "source" : "113",
+        "target" : "77",
+        "shared_name" : "Glyma.06G017100 (Pos_correlation) Glyma.19G106800",
+        "name" : "Glyma.06G017100 (Pos_correlation) Glyma.19G106800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 149,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "148",
+        "source" : "113",
+        "target" : "75",
+        "shared_name" : "Glyma.06G017100 (Pos_correlation) Glyma.17G228800",
+        "name" : "Glyma.06G017100 (Pos_correlation) Glyma.17G228800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 148,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "147",
+        "source" : "113",
+        "target" : "107",
+        "shared_name" : "Glyma.06G017100 (Pos_correlation) Glyma.04G008300",
+        "name" : "Glyma.06G017100 (Pos_correlation) Glyma.04G008300",
+        "interaction" : "Pos_correlation",
+        "SUID" : 147,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "118",
+        "source" : "106",
+        "target" : "117",
+        "shared_name" : "Glyma.11G064300 (Pos_correlation) Glyma.17G005600",
+        "name" : "Glyma.11G064300 (Pos_correlation) Glyma.17G005600",
+        "interaction" : "Pos_correlation",
+        "SUID" : 118,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "116",
+        "source" : "106",
+        "target" : "115",
+        "shared_name" : "Glyma.11G064300 (Pos_correlationWithTFRegulation) Glyma.08G132800",
+        "name" : "Glyma.11G064300 (Pos_correlationWithTFRegulation) Glyma.08G132800",
+        "interaction" : "Pos_correlationWithTFRegulation",
+        "SUID" : 116,
+        "shared_interaction" : "Pos_correlationWithTFRegulation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "114",
+        "source" : "106",
+        "target" : "113",
+        "shared_name" : "Glyma.11G064300 (Pos_correlationWithTFRegulation) Glyma.06G017100",
+        "name" : "Glyma.11G064300 (Pos_correlationWithTFRegulation) Glyma.06G017100",
+        "interaction" : "Pos_correlationWithTFRegulation",
+        "SUID" : 114,
+        "shared_interaction" : "Pos_correlationWithTFRegulation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "112",
+        "source" : "106",
+        "target" : "111",
+        "shared_name" : "Glyma.11G064300 (Pos_correlationWithTFRegulation) Glyma.06G105000",
+        "name" : "Glyma.11G064300 (Pos_correlationWithTFRegulation) Glyma.06G105000",
+        "interaction" : "Pos_correlationWithTFRegulation",
+        "SUID" : 112,
+        "shared_interaction" : "Pos_correlationWithTFRegulation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "110",
+        "source" : "106",
+        "target" : "77",
+        "shared_name" : "Glyma.11G064300 (Pos_correlation) Glyma.19G106800",
+        "name" : "Glyma.11G064300 (Pos_correlation) Glyma.19G106800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 110,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "109",
+        "source" : "106",
+        "target" : "75",
+        "shared_name" : "Glyma.11G064300 (Pos_correlation) Glyma.17G228800",
+        "name" : "Glyma.11G064300 (Pos_correlation) Glyma.17G228800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 109,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "108",
+        "source" : "106",
+        "target" : "107",
+        "shared_name" : "Glyma.11G064300 (Pos_correlation) Glyma.04G008300",
+        "name" : "Glyma.11G064300 (Pos_correlation) Glyma.04G008300",
+        "interaction" : "Pos_correlation",
+        "SUID" : 108,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "122",
+        "source" : "101",
+        "target" : "93",
+        "shared_name" : "Glyma.13G222300 (Neg_correlation) Glyma.19G046600",
+        "name" : "Glyma.13G222300 (Neg_correlation) Glyma.19G046600",
+        "interaction" : "Neg_correlation",
+        "SUID" : 122,
+        "shared_interaction" : "Neg_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "102",
+        "source" : "99",
+        "target" : "101",
+        "shared_name" : "Glyma.10G059500 (Pos_correlation) Glyma.13G222300",
+        "name" : "Glyma.10G059500 (Pos_correlation) Glyma.13G222300",
+        "interaction" : "Pos_correlation",
+        "SUID" : 102,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "100",
+        "source" : "99",
+        "target" : "74",
+        "shared_name" : "Glyma.10G059500 (Pos_correlation) Glyma.01G010200",
+        "name" : "Glyma.10G059500 (Pos_correlation) Glyma.01G010200",
+        "interaction" : "Pos_correlation",
+        "SUID" : 100,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "124",
+        "source" : "96",
+        "target" : "93",
+        "shared_name" : "Glyma.15G250800 (Pos_correlation) Glyma.19G046600",
+        "name" : "Glyma.15G250800 (Pos_correlation) Glyma.19G046600",
+        "interaction" : "Pos_correlation",
+        "SUID" : 124,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "123",
+        "source" : "96",
+        "target" : "91",
+        "shared_name" : "Glyma.15G250800 (Pos_correlation) Glyma.08G165500",
+        "name" : "Glyma.15G250800 (Pos_correlation) Glyma.08G165500",
+        "interaction" : "Pos_correlation",
+        "SUID" : 123,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "98",
+        "source" : "95",
+        "target" : "75",
+        "shared_name" : "Glyma.08G302600 (Pos_correlation) Glyma.17G228800",
+        "name" : "Glyma.08G302600 (Pos_correlation) Glyma.17G228800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 98,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "97",
+        "source" : "95",
+        "target" : "96",
+        "shared_name" : "Glyma.08G302600 (Pos_correlation) Glyma.15G250800",
+        "name" : "Glyma.08G302600 (Pos_correlation) Glyma.15G250800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 97,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "94",
+        "source" : "91",
+        "target" : "93",
+        "shared_name" : "Glyma.08G165500 (Pos_correlation) Glyma.19G046600",
+        "name" : "Glyma.08G165500 (Pos_correlation) Glyma.19G046600",
+        "interaction" : "Pos_correlation",
+        "SUID" : 94,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "92",
+        "source" : "91",
+        "target" : "87",
+        "shared_name" : "Glyma.08G165500 (Neg_correlation) Glyma.10G086600",
+        "name" : "Glyma.08G165500 (Neg_correlation) Glyma.10G086600",
+        "interaction" : "Neg_correlation",
+        "SUID" : 92,
+        "shared_interaction" : "Neg_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "105",
+        "source" : "87",
+        "target" : "85",
+        "shared_name" : "Glyma.10G086600 (Pos_correlation) Glyma.10G066700",
+        "name" : "Glyma.10G086600 (Pos_correlation) Glyma.10G066700",
+        "interaction" : "Pos_correlation",
+        "SUID" : 105,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "104",
+        "source" : "87",
+        "target" : "80",
+        "shared_name" : "Glyma.10G086600 (Pos_correlation) Glyma.08G044100",
+        "name" : "Glyma.10G086600 (Pos_correlation) Glyma.08G044100",
+        "interaction" : "Pos_correlation",
+        "SUID" : 104,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "103",
+        "source" : "87",
+        "target" : "83",
+        "shared_name" : "Glyma.10G086600 (Pos_correlation) Glyma.04G011900",
+        "name" : "Glyma.10G086600 (Pos_correlation) Glyma.04G011900",
+        "interaction" : "Pos_correlation",
+        "SUID" : 103,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "88",
+        "source" : "82",
+        "target" : "87",
+        "shared_name" : "Glyma.06G323700 (Pos_correlation) Glyma.10G086600",
+        "name" : "Glyma.06G323700 (Pos_correlation) Glyma.10G086600",
+        "interaction" : "Pos_correlation",
+        "SUID" : 88,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "86",
+        "source" : "82",
+        "target" : "85",
+        "shared_name" : "Glyma.06G323700 (Pos_correlation) Glyma.10G066700",
+        "name" : "Glyma.06G323700 (Pos_correlation) Glyma.10G066700",
+        "interaction" : "Pos_correlation",
+        "SUID" : 86,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "84",
+        "source" : "82",
+        "target" : "83",
+        "shared_name" : "Glyma.06G323700 (Pos_correlation) Glyma.04G011900",
+        "name" : "Glyma.06G323700 (Pos_correlation) Glyma.04G011900",
+        "interaction" : "Pos_correlation",
+        "SUID" : 84,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "90",
+        "source" : "80",
+        "target" : "89",
+        "shared_name" : "Glyma.08G044100 (Pos_correlation) Glyma.08G214300",
+        "name" : "Glyma.08G044100 (Pos_correlation) Glyma.08G214300",
+        "interaction" : "Pos_correlation",
+        "SUID" : 90,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "174",
+        "source" : "79",
+        "target" : "169",
+        "shared_name" : "Glyma.04G218700 (Neg_correlation) Glyma.04G046200",
+        "name" : "Glyma.04G218700 (Neg_correlation) Glyma.04G046200",
+        "interaction" : "Neg_correlation",
+        "SUID" : 174,
+        "shared_interaction" : "Neg_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "81",
+        "source" : "79",
+        "target" : "80",
+        "shared_name" : "Glyma.04G218700 (Neg_correlation) Glyma.08G044100",
+        "name" : "Glyma.04G218700 (Neg_correlation) Glyma.08G044100",
+        "interaction" : "Neg_correlation",
+        "SUID" : 81,
+        "shared_interaction" : "Neg_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "129",
+        "source" : "77",
+        "target" : "75",
+        "shared_name" : "Glyma.19G106800 (Pos_correlation) Glyma.17G228800",
+        "name" : "Glyma.19G106800 (Pos_correlation) Glyma.17G228800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 129,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "128",
+        "source" : "77",
+        "target" : "107",
+        "shared_name" : "Glyma.19G106800 (Pos_correlation) Glyma.04G008300",
+        "name" : "Glyma.19G106800 (Pos_correlation) Glyma.04G008300",
+        "interaction" : "Pos_correlation",
+        "SUID" : 128,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "127",
+        "source" : "75",
+        "target" : "77",
+        "shared_name" : "Glyma.17G228800 (Pos_correlation) Glyma.19G106800",
+        "name" : "Glyma.17G228800 (Pos_correlation) Glyma.19G106800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 127,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "126",
+        "source" : "75",
+        "target" : "96",
+        "shared_name" : "Glyma.17G228800 (Pos_correlation) Glyma.15G250800",
+        "name" : "Glyma.17G228800 (Pos_correlation) Glyma.15G250800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 126,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "125",
+        "source" : "75",
+        "target" : "107",
+        "shared_name" : "Glyma.17G228800 (Pos_correlation) Glyma.04G008300",
+        "name" : "Glyma.17G228800 (Pos_correlation) Glyma.04G008300",
+        "interaction" : "Pos_correlation",
+        "SUID" : 125,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "78",
+        "source" : "74",
+        "target" : "77",
+        "shared_name" : "Glyma.01G010200 (Pos_correlation) Glyma.19G106800",
+        "name" : "Glyma.01G010200 (Pos_correlation) Glyma.19G106800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 78,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "76",
+        "source" : "74",
+        "target" : "75",
+        "shared_name" : "Glyma.01G010200 (Pos_correlation) Glyma.17G228800",
+        "name" : "Glyma.01G010200 (Pos_correlation) Glyma.17G228800",
+        "interaction" : "Pos_correlation",
+        "SUID" : 76,
+        "shared_interaction" : "Pos_correlation",
+        "selected" : false
+      },
+      "selected" : false
+    } ]
+  }
+}
