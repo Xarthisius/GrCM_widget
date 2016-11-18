@@ -140,33 +140,59 @@ s1.line('x', 'y2', source=source, color='red', legend="Elevated CO2")
 
 nodes, edges = get_graph('Input/example.cyjs')
 
-colors = []
-labels = []
-for node in nodes.values():
+with open('Input/NetworkListWithTFAnnotation.txt', 'r') as fh:
+    tfdata = fh.read().split()
+tf_or_not = dict(zip(tfdata[::2], tfdata[1::2]))
+
+tf_sources = dict(
+    x=[], y=[], name=[], color=[], label=[], mRNA_e=[], mRNA_a=[]
+)
+mg_sources = dict(
+    x=[], y=[], name=[], color=[], label=[], mRNA_e=[], mRNA_a=[]
+)
+df = data_static  # shortcut
+for gene in nodes.values():
+    name = gene['name']
+    if tf_or_not[name] == 'TF':
+        d = tf_sources
+    else:
+        d = mg_sources
     try:
-        gene_amb = amb_source.data[node['name']][-1]
-        gene_ele = ele_source.data[node['name']][-1]
+        gene_amb = amb_source.data[name][-1]
+        gene_ele = ele_source.data[name][-1]
+        mRNA_e = df.loc[df.Glyma_ID == name, 'mRNA_ele'].values[0]
+        mRNA_a = df.loc[df.Glyma_ID == name, 'mRNA_Amb'].values[0]
         if gene_ele > gene_amb:
-            colors.append('red')
-            labels.append('mRNA higher for elevated CO2')
+            color = 'red'
+            label = 'mRNA higher for elevated CO2'
         else:
-            colors.append('blue')
-            labels.append('mRNA higher for ambient CO2')
+            color = 'blue'
+            label = 'mRNA higher for ambient CO2'
     except KeyError:
-        colors.append('black')
-        labels.append('mRNA unknown')
+        color = 'black'
+        label = 'mRNA unknown'
+        mRNA_e = mRNA_a = -1.0
+    d['x'].append(gene['x'])
+    d['y'].append(gene['y'])
+    d['name'].append(name)
+    d['color'].append(color)
+    d['label'].append(label)
+    d['mRNA_e'].append(mRNA_e)
+    d['mRNA_a'].append(mRNA_a)
 
-nodes_source = ColumnDataSource(
-    dict(x=[_['x'] for _ in nodes.values()],
-         y=[_['y'] for _ in nodes.values()],
-         name=[_['name'] for _ in nodes.values()],
-         color=colors, label=labels))
+tf_sources = ColumnDataSource(tf_sources)
+mg_sources = ColumnDataSource(mg_sources)
 
-hover = HoverTool(tooltips=[('name', '@name'), ('id', '$index')])
+hover = HoverTool(tooltips=[
+    ('name', '@name'), ('id', '$index'),
+    ('mRNA level (elevated CO2)', '@mRNA_e'),
+    ('mRNA level (ambient CO2)', '@mRNA_a')])
 net = figure(sizing_mode=sizing_mode,
              tools=['tap', hover, 'box_zoom', 'reset'])
-r_circles = net.circle('x', 'y', source=nodes_source, size=10,
-                       color='color', level='overlay', legend='label')
+r_circles = net.circle('x', 'y', source=mg_sources, size=10,
+                       color='color', level='overlay')
+r_triang = net.triangle('x', 'y', source=tf_sources, size=10,
+                        color='color', level='overlay')
 
 taptool = net.select(type=TapTool)
 callback_args = dict(source=source, amb=amb_source, ele=ele_source)
@@ -198,6 +224,16 @@ for edge in edges:
               line_color=color, line_dash=line_dash)
     )
 
+# create legend manually
+net.circle([0], [0], color='red', legend='mRNA higher for elevated CO2',
+           size=0)
+net.circle([0], [0], color='blue', legend='mRNA higher for ambient CO2',
+           size=0)
+net.circle([0], [0], color='black', legend='mRNA unknown', size=0)
+net.circle([0], [0], color='gray', fill_color='white',
+           legend='Metabolic gene', size=0)
+net.triangle([0], [0], color='gray', fill_color='white',
+             legend='Transcription factor', size=0)
 net.line([0, 0.1], [0, 0.1], color='red', legend='Positive correlation')
 net.line([0, 0.1], [0, 0.1], color='blue', legend='Negative correlation')
 net.line([0, 0.1], [0, 0.1], color='black', legend='Just regulation')
