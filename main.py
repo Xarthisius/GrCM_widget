@@ -8,7 +8,7 @@ from bokeh.io import curdoc
 from bokeh.charts import output_file
 from bokeh.layouts import row
 from bokeh.models import (
-    Arrow, NormalHead, CustomJS, ColumnDataSource, HoverTool, TapTool
+    Arrow, OpenHead, CustomJS, ColumnDataSource, HoverTool, TapTool
 )
 from bokeh.plotting import figure
 
@@ -211,8 +211,7 @@ taptool.callback = callback
 for edge in edges:
     color = edge['color']
     if edge['arrow']:
-        head = NormalHead(line_color=color, line_width=1.5, fill_color=color,
-                          size=8)
+        head = OpenHead(line_color=color, line_width=1.5, size=8)
         line_dash = [0, 0]
     else:
         head = None
